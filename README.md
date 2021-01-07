@@ -100,9 +100,18 @@ Build image and push to docker hub.
 
 `<version>` format is `v<n>-<arch>` (e.g. `v1-amd64`).
 
+```bash
+$ docker build -t shoenig/simple-http:<version> .
+$ docker push shoenig/simple-http:<version>
 ```
-docker build -t shoenig/simple-http:<version> .
-docker push shoenig/simple-http:<version>
+
+Also build & push to `arm64`.
+
+Publish a manifest for `v<n>`.
+
+```bash
+$ docker manifest create shoenig/simple-http:v1 --amend shoenig/simple-http:v1-arm64 --amend shoenig/simple-http:v1-amd64
+$ docker manifest push shoenig/simple-http:v1
 ```
 
 # Contributing
