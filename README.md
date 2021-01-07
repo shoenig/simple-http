@@ -78,6 +78,22 @@ Use `-address` and `-port` to configure the `client` request address.
 $ simple-http client -address 10.0.0.1 -port 9000
 ```
 
+# Docker
+
+#### Usage
+
+Run as server with docker (listens at `0.0.0.0:8999`).
+
+```bash
+$ docker run --net=host --rm shoenig/simple-http:v1-amd64 server
+```
+
+Run as client with docker (requests to `127.0.0.1:8999`).
+
+```bash
+$ docker run --net=host --rm shoenig/simple-http:v1-amd64 client
+```
+
 # Contributing
 
 The `gophers.dev/cmds/simple-http` module is always improving with new features
