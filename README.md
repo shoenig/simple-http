@@ -94,6 +94,17 @@ Run as client with docker (requests to `127.0.0.1:8999`).
 $ docker run --net=host --rm shoenig/simple-http:v1-amd64 client
 ```
 
+#### Publish
+
+Build image and push to docker hub.
+
+`<version>` format is `v<n>-<arch>` (e.g. `v1-amd64`).
+
+```
+docker build -t shoenig/simple-http:<version> .
+docker push shoenig/simple-http:<version>
+```
+
 # Contributing
 
 The `gophers.dev/cmds/simple-http` module is always improving with new features
