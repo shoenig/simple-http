@@ -19,7 +19,7 @@ and the client makes requests.
 The `simple-http` package can be installed by running
 
 ```bash
-$ go get gophers.dev/cmds/simple-http
+$ go install gophers.dev/cmds/simple-http@latest
 ```
 
 # Example Usage
