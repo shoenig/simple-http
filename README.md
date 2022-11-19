@@ -3,14 +3,11 @@ simple-http
 
 A toy http client and server implementation.
 
-[![Go Report Card](https://goreportcard.com/badge/gophers.dev/cmds/simple-http)](https://goreportcard.com/report/gophers.dev/cmds/simple-http)
-[![GoDoc](https://godoc.org/gophers.dev/cmds/simple-http?status.svg)](https://godoc.org/gophers.dev/cmds/simple-http)
-[![NetflixOSS Lifecycle](https://img.shields.io/osslifecycle/shoenig/simple-http.svg)](OSSMETADATA)
 [![GitHub](https://img.shields.io/github/license/shoenig/simple-http.svg)](LICENSE)
 
 # Project Overview
 
-Module `gophers.dev/cmds/simple-http` provides a trivial Go HTTP server
+Module `github.com/shoenig/simple-http` provides a trivial Go HTTP server
 and client service implementation. By default the server lists for requests,
 and the client makes requests.
 
@@ -19,7 +16,7 @@ and the client makes requests.
 The `simple-http` package can be installed by running
 
 ```bash
-$ go install gophers.dev/cmds/simple-http@latest
+$ go install github.com/shoenig/simple-http@latest
 ```
 
 # Example Usage
@@ -116,9 +113,9 @@ $ docker manifest push shoenig/simple-http:v1
 
 # Contributing
 
-The `gophers.dev/cmds/simple-http` module is always improving with new features
+The `github.com/shoenig/simple-http` module is always improving with new features
 and error corrections. For contributing bug fixes and new features please file an issue.
 
 # License
 
-The `gophers.dev/cmds/simple-http` module is open source under the [BSD-3-Clause](LICENSE) license.
+The `github.com/shoenig/simple-http` module is open source under the [BSD-3-Clause](LICENSE) license.
