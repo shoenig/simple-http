@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"github.com/google/subcommands"
-	"gophers.dev/cmds/simple-http/internal/simple"
+	"github.com/shoenig/simple-http/internal/simple"
 )
 
 func main() {
