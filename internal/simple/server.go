@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/google/subcommands"
-	"gophers.dev/pkgs/extractors/env"
-	"gophers.dev/pkgs/loggy"
+	"github.com/shoenig/extractors/env"
+	"github.com/shoenig/loggy"
 )
 
 func Server() subcommands.Command {
